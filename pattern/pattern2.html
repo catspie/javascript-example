@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8"/>
+</head>
+<body>
+<script>
+var pattern = /a/;
+var str = 'abcdef';
+
+console.log(str.match(pattern));
+//문자열 치환
+console.log(str.replace(pattern, 'A'));
+
+//null
+var xi = /a/;
+console.log("Abcde".match(xi));
+
+//대소문자 구분 x
+var oi = /a/i;
+console.log("Abcde".match(oi));
+
+//a한번만 출력
+var xg = /a/;
+console.log("abcdea".match(xg));
+
+//a 모두 찾음
+var og = /a/g;
+console.log("abcdea".match(og));
+
+//패턴찾기 여러 개 같이 쓰기
+var ig = /a/ig;
+console.log("Aabcdea".match(ig));
+</script>
+</body>
+</html>

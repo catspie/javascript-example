@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8"/>
+</head>
+<body>
+<script>
+/*
+//그룹지정 및 치환 > 캡처
+var pattern = /(\w+)\s(\w+)/;
+var str = "coding everyday";
+//단어 앞 뒤 바뀌고 콤마 추가됨
+var result = str.replace(pattern, "$2, $1");
+//everyday, coding
+console.log(result);
+*/
+
+//링크 태그 달기
+var urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim; 
+var content = '생활코딩: http://opentutorials.org/course/1 입니다. 네이버: https:/naver.com';
+var result = content.replace(urlPattern, function(url){
+  return '<a href="'+url+'">'+url+'</a>';
+})
+console.log(result);
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
