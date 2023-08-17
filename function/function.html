@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8"/>
+</head>
+<body>
+<script type="text/javascript">
+   
+   //재사용성, 유지보수용이, 가독성
+   function numbering(){
+    document.write(1);
+   }
+   numbering();
+   
+   //출력은 return 
+   function get_mem(){
+    return 'syyoo';
+    return 'mspark';
+   }
+   alert(get_mem());
+
+   //입력은 함수 호출 시 받는다.
+    function get_argument(arg){
+        return arg;
+    }
+    alert(get_argument(1*1000));
+    alert(get_argument(2*1000));
+
+    function get_arguments(arg1, arg2){
+        return arg1+arg2;
+    }
+    alert(get_arguments(1,1000));
+    alert(get_arguments(2,1000));
+
+    //같은 표현
+    var number = function () {}
+    function number2(){}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8"/>
+</head>
+<body>
+<script>
+
+   //연관되어 있는 데이터의 처리: 겍체지향프로그래밍
+   var grades = {
+    'list': {'egoing': 10, 'syyoo': 30, 'skkim': 50}, 
+    'show': function(){
+        for(var name in this.list){
+            console.log(name, this.list[name]);
+        }
+    }
+}
+   grades.show();
+
+   </script>
+</body>
+</html>
